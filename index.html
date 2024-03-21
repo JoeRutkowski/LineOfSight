@@ -18,9 +18,29 @@
     </p>
     <div class="circle" id="circleID"></div>
     <div class="action">
-      <button onclick="paint('red')">Red</button>
-      <button onclick="paint('green')">Green</button>
-      <button onclick="paint('yellow')">Yellow</button>
+      <form>
+        <fieldset>
+          <legend>Attacker's Square</legend>
+          <label for="tileAx">X-Coordinate</label>
+          <input id="tileAx" name="tileAx" type="text"> <br>
+          <label for="tileAy">Y-Coordinate</label>
+          <input id="tileAy" name="tileAy" type="text"> <br>
+          <label for="tileAz">Z-Coordinate</label>
+          <input id="tileAz" name="tileAz" type="text"> <br>
+        </fieldset>
+        <legend>Defender's Square</legend>
+          <label for="tileBx">X-Coordinate</label>
+          <input id="tileBx" name="tileBx" type="text"> <br>
+          <label for="tileBy">Y-Coordinate</label>
+          <input id="tileBy" name="tileBy" type="text"> <br>
+          <label for="tileBz">Z-Coordinate</label>
+          <input id="tileBz" name="tileBz" type="text"> <br>
+        </fieldset>
+        <fieldset>
+          <legend>Submit</legend>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
     </div>
   </div>
 </body>

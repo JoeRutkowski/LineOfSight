@@ -2,6 +2,12 @@ const Tile = new Object(x, y, z);
 const tileA = new Tile(0,0,0);
 const tileB = new Tile(3,3,3);
 
+function Tile(x,y,z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+}
+
 function LineOfSight(Tile a, Tile b) {
     /*
     *A simplified version of the function
