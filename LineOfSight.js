@@ -1,13 +1,21 @@
 const Tile = new Object(x, y, z);
 const tileA = new Tile(0,0,0);
-const tileB = new Tile(3,3,3);
+const tileB = new Tile(0,0,0);
 
 function Tile(x,y,z) {
     this.x = x;
     this.y = y;
     this.z = z;
 }
-
+function formConverter(form) {
+    tileA.x = form.tileAx.value;
+    tileA.y = form.tileAy.value;
+    tileA.z = form.tileAz.value;
+    tileB.x = form.tileBx.value;
+    tileB.y = form.tileBy.value;
+    tileB.z = form.tileBz.value;
+    LineOfSight(tileA, tileB);
+}
 function LineOfSight(Tile a, Tile b) {
     /*
     *A simplified version of the function
